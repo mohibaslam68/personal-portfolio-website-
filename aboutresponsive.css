@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive styles */
+
+
+@media (max-width: 576px) {
+
+    .hero img {
+        position: relative;
+        /* it will help to change the poistion of img */
+        top: -79px;
+        /* it will help to change the poistion of img from top */
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        /* it will help to change the grid layout */
+    }
+
+
+    .container h1 {
+        left: 0;
+        /* it will help to change the poistion of h1 from left  */
+        top: 0;
+        /* it will help to change the poistion of h1  from top*/
+        text-align: center;
+        /* it will help to change the text alignment of h1 */
+        position: static;
+
+        margin-bottom: 20px;
+        /* it will help to change the margin of h1 from bottom */
+    }
+
+    .certification-grid {
+        grid-template-columns: 1fr;
+        /* it will help to change the grid layout */
+    }
+
+    .certification-card {
+        height: auto;
+        /* it will help to change the height of card */
+        padding: 20px 10px;
+        /* it will help to change the padding of card */
+    }
+
+    .certification-container {
+        width: 100px;
+        /* it will help to change the width of card  to 100px*/
+        height: 100px;
+        /* it will help to change the height of card  to 100px*/
+        margin-bottom: 15px;
+        /* it will help to change the margin of card from bottom */
+    }
+
+    h2 {
+        font-size: 20px;
+        /* it will help to change the font size of h2 */
+    }
+
+    p {
+        font-size: 14px;
+        /* it will help to change the font size of p  to 14px*/
+        padding: 0 10px 20px;
+        /* it will help to change the padding of p  to 20px*/
+    }
+
+    a button {
+        width: 100px;
+        /* it will help to change the width of button  to 100px*/
+        height: 45px;
+        /* it will help to change the height of button  to 45px*/
+        left: 0;
+        /* it will help to change the poistion of button from left  */
+
+        position: relative;
+        /* it will help to change the poistion of button  */
+        top: 20px;
+        /* it will help to change the poistion of button  from top */
+    }
+
+    .certification-link {
+        margin-top: 30px;
+        /* it will help to change the margin of certification link from top */
+    }
+
+    span {
+        margin-top: 20px;
+        /* it will help to change the margin of span from top */
+    }
+
+    .Achievements-section {
+        width: auto;
+        /* it will help to change the width of Achievements section */
+        display: grid;
+        /* it will help to change the display of Achievements section */
+
+    }
+
+    h3 {
+
+        width: fit-content;
+        /* it will help to change the width of h3 */
+        color: #ffffff;
+        /* it will help to change the color of h3 */
+        font-size: 29px;
+        /* it will help to change the font size of h3 */
+        font-weight: bold;
+        /* it will help to change the font weight of h3 */
+
+        position: relative;
+        /* it will help to change the poistion of h3 */
+        top: 34px;
+        /* it will help to change the poistion of h3 from top */
+        left: -471px;
+        /* it will help to change the poistion of h3 from left */
+    }
+}

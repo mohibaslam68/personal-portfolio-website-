@@ -1,0 +1,427 @@
+/* it will ensure uniform styling across browsers, 
+it  will resets the margin and padding of all elements to zero.  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HOME PAGE RESPONSIVE */
+
+/* Media Query for phones (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+
+    .contact-info {
+
+        width: 100%;
+        /* it will set the width of contact-info to 100% of scrren */
+        position: absolute;
+        /* it will set the position of contact-info to absolute */
+        left: 0px;
+        /* it will set the left position of contact-info to 0px */
+    }
+
+    .social-icons {
+        display: none;
+        /* it will hide the social-icons */
+    }
+
+    .navbar {
+        flex-direction: row;
+        /* it will set the flex-direction of navbar to row */
+        justify-content: space-between;
+        /* it will set the justify-content of navbar to space-between */
+    }
+
+    .navbar-menu {
+        position: fixed;
+        /* it will set the position of navbar-menu to fixed */
+        top: 0;
+        /* it will set the top position of navbar-menu to 0 */
+        left: -250px;
+        /* it will set the left position of navbar-menu to -250px */
+        width: 200px;
+        /* it will set the width of navbar-menu to 200px */
+        height: 100%;
+        /* it will set the height of navbar-menu to 100% */
+        background-color: #f5f5f5;
+        /* it will set the background-color of navbar-menu to #f5f5f5 */
+        flex-direction: column;
+        /* it will set the flex-direction of navbar-menu to column */
+        align-items: start;
+        /* it will set the align-items of navbar-menu to start */
+        padding-top: 60px;
+        /* it will set the padding-top of navbar-menu to 60px */
+        transition: left 0.3s ease;
+        /* it will set the transition of left to 0.3s ease */
+        z-index: 1000;
+    }
+
+    .navbar-menu.show {
+        left: 0;
+        /* it will set the left position of navbar-menu to 0 */
+    }
+
+    .navbar li a {
+        width: 100%;
+        /* it will set the width of navbar li a to 100% */
+        padding: 15px;
+        /* it will set the padding of navbar li a to 15px */
+    }
+
+    .hamburger {
+        display: block;
+        /* it will set the display of hamburger to block */
+    }
+
+    .hero h2 {
+        position: relative;
+        /* it will set the position of hero h2 to relative */
+        left: -132px;
+        /* it will set the left position of hero h2 to -132px */
+        font-size: 20px;
+        /* it will set the font-size of hero h2 to 20px */
+
+    }
+
+    .hero h1 {
+        position: relative;
+        /* it will set the position of hero h1 to relative */
+        left: -125px;
+        /* it will set the left position of hero h1 to -125px */
+        font-size: 45px;
+        /* it will set the font-size of hero h1 to 45px */
+    }
+
+    .hero p {
+        position: relative;
+        /* it will set the position of hero p to relative */
+        left: -130px;
+        /* it will set the left position of hero p to -130px */
+        font-size: 18px;
+        /* it will set the font-size of hero p to 18px */
+        margin-top: 5px;
+        /* it will set the margin-top of hero p to 5px */
+    }
+
+    .hero img {
+        position: relative;
+        /* it will set the position of hero img to relative */
+        left: 102px;
+        /* it will set the left position of hero img to 102px */
+        width: 398px;
+        /* it will set the width of hero img to 398px */
+        height: auto;
+        /* it will set the height of hero img to auto */
+        top: 23px;
+        /* it will set the top position of hero img to 23px */
+    }
+
+    button {
+        position: relative;
+        /* it will set the position of button to relative */
+        left: 10px;
+        /* it will set the left position of button to 10px */
+        top: -270px;
+        /* it will set the top position of button to -270px */
+        margin-top: 20px;
+        /* it will set the margin-top of button to 20px */
+
+        font-size: 14px;
+        /* it will set the font-size of button to 14px */
+        background-color: #000000;
+        /* it will set the background-color of button to #000000 */
+        color: #fff;
+        /* it will set the color of button to #fff */
+        border: none;
+        /* it will set the border of button to none */
+        border-radius: 5px;
+        /* it will set the border-radius of button to 5px */
+
+        cursor: pointer;
+        /* it will set the cursor of button to pointer */
+    }
+
+    button:hover {
+        background-color: #F9C809;
+        /* it will set the background-color of button to #F9C809 */
+        color: #000000;
+        /* it will set the color of button to #000000 */
+    }
+    .service {
+        height: 900px;
+    }
+    
+    .services-container h1{
+        position: relative;
+        left: 141px;
+    }
+    .service-1 {
+        width: 211px;
+        height: 50px;
+    }
+    
+    .service-2 {
+        width: 211px;
+        height: 50px;
+    }
+    
+    .service-3 {
+        width: 211px;
+        height: 50px;
+        margin-top: 545px;
+        position: relative;
+        left: -204px;
+        top: -120px;
+    }
+    
+    .service-4 {
+        width: 211px;
+        height: 50px;
+        margin-top: -213px;
+    }
+    
+    .service-5 {
+        width: 211px;
+        height: 50px;
+        margin-top: -213px;
+    }
+    
+    .service-6 {
+        width: 211px;
+        height: 50px;
+        margin-top: -285px;
+    }
+    
+    .service-7 {
+        width: 465px;
+        height: 160px;
+        position: relative;
+        left: -630px;
+        top: 239px;
+    }
+    
+    /* Paragraph styles inside each tile */
+    .service-1 p {
+        position: relative;
+        left: -33px;
+        top: -4px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .service-2 p {
+        position: relative;
+        left: 6px;
+        top: -4px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .service-3 p {
+        position: relative;
+        left: -196px;
+        top: -99px;
+        font-size: 15px;
+        font-weight: bold;
+        width: 123px;
+    }
+    
+    .service-4 p {
+        position: relative;
+        left: 6px;
+        top: -4px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .service-5 p {
+        position: relative;
+        left: -39px;
+        top: 16px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .service-6 p {
+        position: relative;
+        left: -39px;
+        top: -28px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .service-7 p {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .container2 {
+        gap: 20px;
+        /* it will set the gap of container2 to 20px */
+        padding: 10px;
+        /* it will set the padding of container2 to 10px */
+
+        flex-direction: column;
+        /* it will set the flex-direction of container2 to column */
+    }
+
+    .box10 {
+        width: 90%;
+        /* it will set the width of box10 to 90% */
+        height: auto;
+        /* it will set the height of box10 to auto */
+        margin-top: 20px;
+        /* it will set the margin-top of box10 to 20px */
+        padding-bottom: 20px;
+        /* it will set the padding-bottom of box10 to 20px */
+    }
+
+    .box10 img {
+        height: auto;
+        /* it will set the height of box10 img to auto */
+        /* top: 10px; */
+        top: 30px;
+        /* it will set the top position of box10 img to 30px */
+        position: relative;
+        /* it will set the position of box10 img to relative */
+        left: 40px;
+        /* it will set the left position of box10 img to 40px */
+    }
+
+    .box10 h1 {
+        font-size: 22px;
+        /* it will set the font-size of box10 h1 to 22px */
+        margin-top: 20px;
+        /* it will set the margin-top of box10 h1 to 20px */
+        margin-left: 10px;
+        /* it will set the margin-left of box10 h1 to 10px */
+    }
+
+    .box10 p {
+        font-size: 16px;
+        /* it will set the font-size of box10 p to 16px */
+        margin-left: 10px;
+        /* it will set the margin-left of box10 p to 10px */
+    }
+
+    .box10 li {
+        font-size: 15px;
+        /* it will set the font-size of box10 li to 15px */
+        margin-left: 10px;
+        /* it will set the margin-left of box10 li to 10px */
+    }
+
+    .box10 h2 {
+        font-size: 16px;
+        /* it will set the font-size of box10 h2 to 16px */
+        margin-left: 10px;
+        /* it will set the margin-left of box10 h2 to 10px */
+    }
+
+    .box10 button {
+        /* width: 100%; */
+        margin-left: 0;
+        /* it will set the margin-left of box10 button to 0 */
+        position: relative;
+        /* it will set the position of box10 button to relative */
+        top: 0px;
+        /* it will set the top position of box10 button to 0px */
+    }
+
+    .small-div {
+        width: 95%;
+        /* it will set the width of small-div to 95% */
+        height: auto;
+        /* it will set the height of small-div to auto */
+        margin-top: 48px;
+        /* it will set the margin-top of small-div to 48px */
+        padding-bottom: 20px;
+        /* it will set the padding-bottom of small-div to 20px */
+    }
+
+    .small-div p {
+        width: 100%;
+        /* it will set the width of small-div p to 100% */
+        margin-left: 0;
+        /* it will set the margin-left of small-div p to 0 */
+        margin-top: 10px;
+        /* it will set the margin-top of small-div p to 10px */
+        height: auto;
+        /* it will set the height of small-div p to auto */
+        padding: 10px;
+        /* it will set the padding of small-div p to 10px */
+    }
+
+    .client-stories {
+        height: auto;
+        /* it will set the height of client-stories to auto */
+        padding: 60px 10px 20px 10px;
+        /* it will set the padding of client-stories to 60px 10px 20px 10px */
+        display: grid;
+        /* it will set the display of client-stories to grid */
+
+    }
+
+    .client-stories h1 {
+        font-size: 30px;
+        /* it will set the font-size of client-stories h1 to 30px */
+        top: 10px;
+        /* it will set the top position of client-stories h1 to 10px */
+    }
+
+    .client-grid {
+        grid-template-columns: 1fr;
+        padding: 80px 10px 20px 10px;
+        gap: 15px;
+    }
+
+    .client-box {
+        /* width: 90%; */
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .client-box img {
+        /* width: 100%; */
+        /* height: auto; */
+        margin-top: 0;
+        /* it will set the margin-top of client-box img to 0 */
+    }
+
+    .client-box p {
+        font-size: 14px;
+        /* it will set the font-size of client-box p to 14px */
+        width: 100%;
+        /* it will set the width of client-box p to 100% */
+
+        margin-top: 10px;
+        /* it will set the margin-top of client-box p to 10px */
+    }
+
+    .client-box h2 {
+        font-size: 18px;
+        /* it will set the font-size of client-box h2 to 18px */
+        margin-top: 15px;
+        /* it will set the margin-top of client-box h2 to 15px */
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: flex-start; /* Align stacked items to the left */
+        gap: 8px;
+        position: relative;
+        top: -72px;
+        left: 16px;
+        width: 36%;
+    }
+
+    footer ul li a {
+        font-size: 14px;
+    }
+
+    .copyright {
+     
+        margin-top: 0px;
+        position: absolute;
+        left: 16px;
+    }}

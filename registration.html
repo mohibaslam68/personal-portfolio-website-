@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<!-- The document type is declared as HTML5 by  -->
+<html lang="en">
+<!-- The HTML document's root element with English selected -->
+
+<head>
+  <!-- Contains meta-information about the document -->
+  <meta charset="UTF-8">
+  <!-- Sets the character encoding to UTF-8 for proper text display -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensures proper rendering and touch zooming on mobile devices -->
+  <link rel="stylesheet" href="/css_files/registration,.css">
+  <!-- Link to main stylesheet -->
+  <link rel="stylesheet" href="/responsive_css/registionsresponsive.css">
+  <!-- Link to responsive stylesheet (fixed space issue in path) -->
+  <link rel="stylesheet" href="/responsive_css/ responsive.css">
+  <!-- Link to responsive stylesheet (fixed space issue in path) -->
+  <title>Become A Member</title>
+  <!-- The title of the page shown on the browser tab -->
+</head>
+
+<body>
+  <script>function toggleMenu() {
+      const menu = document.getElementById('navbarMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+  <header>
+     <!-- contain email and phone number -->
+    <div class="contact-info">
+      <span><img src="/img_files/6214722_email_envelope_gmail_letter_logo_icon.png" alt=""></span>
+      <span>info@Rexitan.com</span>
+      <span><img src="/img_files/352510_local_phone_icon.png" alt="" srcset=""></span>
+      <span>12-405-546-453</span>
+    </div>
+    <!-- Social media icons -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com/groups/1589537311320016/"><img src="/img_files/_facebook_icon.png" alt="" srcset=""></a>
+      <a href="https://www.youtube.com/shorts/UvhhJbBso4Y"><img src="/img_files/youtube logo_icon.png" alt="" srcset=""></a>
+      <a href="https://www.instagram.com/josh_lenartowicz/?hl=en"><img src="/img_files/_instagram_fill_icon.png" alt="" srcset=""></a>
+    </div>
+
+  </header>
+
+  <!-- hero or baaner -->
+  <div class="hero">
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+               <!-- li tag use for navbar links ti display as list -->
+      <ul class="navbar-menu" id="navbarMenu">
+        <li><a href="/html_files/index.html">HOME</a></li>
+        <li><a href="/html_files/about.html">ABOUT ME</a></li>
+        <li><a href="/html_files/booking.html">BOOK A SESSION</a></li>
+        <li><a href="/html_files/registration.html">BECOME A MEMBER</a></li>
+        <li><a href="/html_files/programs.html">PROGRAMS</a></li>
+        <li><a href="/html_files/contact.html">CONTACT</a></li>
+        <li><a href="/html_files/blog.html">BLOG</a></li>
+      </ul>
+    </nav>
+    <h2>Become A Member</h2>
+    <!-- h2 tag is used for displaying Become A Member -->
+
+  </div>
+  <!-- hero or baaner end -->
+  <!-- this section or container contain info about membership plan -->
+  <div class="container2">
+
+    <div class="box10">
+
+      <div class="small-div">
+        <p>standard
+        </p>
+                  
+      </div>
+      <h1>$ 50 /mo</h1>
+
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+      <li>Elit sed do eiusmod tempor</li>
+      <li>Incididunt ut labore et dolore</li>
+      <li>Magna aliqua ut enim ad</li>
+
+
+
+      <button>SELECT PLAN</button>
+
+
+    </div>
+    <div class="box10">
+
+      <div class="small-div">
+        <p>ADVANCED</p>
+      </div>
+      <h1>$ 90 /mo</h1>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+      <li>Elit sed do eiusmod tempor</li>
+      <li>Incididunt ut labore et dolore</li>
+      <li>Magna aliqua ut enim ad</li>
+
+
+      <button>SELECT PLAN</button>
+
+    </div>
+
+
+    <div class="box10">
+
+      <div class="small-div">
+        <p>professional
+        </p>
+      </div>
+      <h1>$ 159 mo</h1>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+      <li>Elit sed do eiusmod tempor</li>
+      <li>Incididunt ut labore et dolore</li>
+      <li>Magna aliqua ut enim ad</li>
+
+
+      <button>SELECT PLAN</button>
+
+    </div>
+
+  </div>
+  <!-- membership form -->
+  <form class="becomeamember-form">
+    <h2>Become a Member</h2>
+
+    <div class="member">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" required />
+    </div>
+
+    <div class="member">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" required />
+    </div>
+
+    <div class="member">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="member">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+    </div>
+
+    <div class="member">
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" required />
+    </div>
+
+    <div class="member">
+      <label for="plan">Type of Plan</label>
+      <select id="plan" name="plan" required>
+        <option value="">-- Select Plan --</option>
+        <option value="standard">Standard</option>
+        <option value="advanced">Advanced</option>
+        <option value="professional">Professional</option>
+      </select>
+    </div>
+
+    <div class="member">
+      <label for="payment">Payment Method</label>
+      <select id="payment" name="payment" required>
+        <option value="">-- Select Payment Method --</option>
+        <option value="credit">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="bank">Bank Transfer</option>
+      </select>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+<!-- FOOTER -->
+  <footer>
+    <ul>
+      <li><a href="/html_files/index.html">HOME</a></li>
+                <li><a href="/html_files/about.html">ABOUT ME</a></li>
+                <li><a href="/html_files/booking.html">BOOK A SESSION</a></li>
+                <li><a href="/html_files/registration.html">BECOME A MEMBER</a></li>
+                <li><a href="/html_files/programs.html">PROGRAMS</a></li>
+                <li><a href="/html_files/contact.html">CONTACT</a></li>
+                <li><a href="/html_files/blog.html">BLOG</a></li>
+    </ul>
+    <div class="copyright">
+      &copy; 2025 Your Website Name. All rights reserved.
+    </div>
+
+  </footer> 
+</body>
+
+</html>

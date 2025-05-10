@@ -1,0 +1,19 @@
+@media (max-width: 500px) {
+
+
+
+    .container {
+        display: grid;}
+        form{
+           position: relative;
+           left: -15px; 
+        }
+        button.submit{
+            position: relative;
+           top: 0px;
+        }
+        button.request{
+            position: relative;
+            top: 0px;
+        }
+}

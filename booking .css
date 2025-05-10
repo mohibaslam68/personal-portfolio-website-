@@ -1,0 +1,498 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #262626;
+    /* it will change the background color to #262626;*/
+    width: auto;
+    /* width auto property will adjust header width accounding to screen size */
+    height: 50px;
+    /* this property will give the hight to header*/
+    display: flex;
+    /* it will disply header components horizontally */
+}
+
+/* contact-info styling */
+.contact-info {
+    color: rgba(255, 255, 255, 0.602);
+    /* it will change the background color to 255, 255, 255, 0.602;*/
+    position: relative;
+    /* it will help the element to change the position   */
+    left: 100px;
+    /* it will change the position of contact-info to 100px from left */
+    top: 15px;
+    /* it will change the position of contact-info to 15px from top */
+    font-weight: bold;
+    /* it will make the font bold */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    /* it will change the font family to Franklin Gothic Medium, Arial Narrow, Arial, sans-serif */
+    font-size: 18px;
+    /* it will change the font size to 18px */
+    display: flex;
+    /* it will display the contact-info components horizontally */
+    gap: 5px;
+    /* it will add a gap of 5px between the components */
+    width: fit-content;
+    /* it will adjust the width of contact-info according to its content */
+}
+
+.contact-info:hover {
+    color: white;
+    /* it will change the color of contact-info to white when user hover on it */
+}
+
+/* ontact-info img styling */
+.contact-info img {
+    width: 37px;
+    /* it will change the width of contact-info img to 37px */
+    height: 27px;
+    /* it will change the height of contact-info img to 27px */
+    object-fit: contain;
+    /* it will make the image fit in the container */
+    transition: filter 0.3s ease;
+    /* it will add a smooth transition effect to the image */
+    margin-top: -1px;
+    /* it will change the position of contact-info img to -1px from top */
+}
+
+.contact-info img:hover {
+    filter: brightness(0) invert(1);
+    /* it will change the brightness of contact-info img to 0 and invert it when user hover on it */
+}
+
+.contact-info img,
+.contact-info span {
+    transition: all 0.3s ease;
+    /* it will add a smooth transition effect to the contact-info img and span */
+}
+
+/* Target the first pair on hover */
+.contact-info:hover img:first-of-type,
+.contact-info:hover span:first-of-type {
+    color: white;
+    /* it will change the color of contact-info img and span to white when user hover on it */
+    filter: brightness(0) invert(1);
+    /* it will change the brightness of contact-info img to 0 and invert it when user hover on it */
+}
+
+/* Target the second pair on hover — if you hover the image or span directly */
+.contact-info img:nth-of-type(2):hover,
+.contact-info span:nth-of-type(2):hover {
+    color: white;
+    /* it will change the color of contact-info img and span to white when user hover on it */
+    filter: brightness(0) invert(1);
+    /* it will change the brightness of contact-info img to 0 and invert it when user hover on it */
+}
+
+/* social-icons styling */
+.social-icons {
+    width: 272px;
+    /* it will change the width of social-icons to 272px */
+    height: 50px;
+    /* it will change the height of social-icons to 50px */
+    display: flex;
+    /* it will display the social-icons components horizontally */
+    justify-content: center;
+    /* it will center the social-icons components */
+    align-items: center;
+    /* it will align the social-icons components vertically */
+    position: relative;
+    /* it will help the element to change the position   */
+    left: 815px;
+    /* it will change the position of social-icons to 815px from left */
+    gap: 15px;
+    /* it will add a gap of 15px between the social-icons components */
+}
+
+/* social-icons img styling */
+.social-icons img {
+    width: 23px;
+    /* it will change the width of social-icons img to 23px */
+    height: 25px;
+    /* it will change the height of social-icons img to 25px */
+    transition: filter 0.3s ease;
+    /* it will add a smooth transition effect to the social-icons img */
+}
+
+.social-icons img:hover {
+    filter: brightness(0) invert(1);
+    /* it will change the brightness of social-icons img to 0 and invert it when user hover on it */
+}
+
+.navbar{
+    background-color: #DCDCDC;
+    width: auto;
+    height: 50px;
+}
+.navbar ul {
+    list-style: none;
+    /* it will remove the bullet points from the list */
+    padding: 0;
+    /* it will remove the padding from the list */
+    margin: 0;
+    /* it will remove the margin from the list */
+    display: flex;
+    /* it will display the navbar components horizontally */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    /* it will change the font family to Franklin Gothic Medium, Arial Narrow, Arial, sans-serif */
+    font-weight: bold;
+    /* it will make the font bold */
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    /* it will remove the underline from the links */
+    color: #333;
+    /* it will change the color of links to #333 */
+    padding: 10px 15px;
+    /* it will add padding of 10px top and bottom and 15px left and right to the links */
+    display: inline-block;
+    /* it will display the links as inline-block */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* it will add a smooth transition effect to the links */
+}
+
+.navbar li a:hover {
+    background-color: #333;
+    /* it will change the background color of links to #333 when user hover on it */
+    color: #fff;
+    /* it will change the color of links to white when user hover on it */
+    border-radius: 5px;
+    /* it will add a border radius of 5px to the links */
+}
+
+
+.hamburger {
+    display: none;
+    /* it will hide the hamburger icon */
+    font-size: 30px;
+    /* it will change the font size of hamburger icon to 30px */
+    cursor: pointer;
+    /* it will change the cursor to pointer when user hover on it */
+}
+
+
+    .hero {
+        background-image: url(/Professional\ Handshake.jpeg);
+        /* it will change the background image of hero to Professional Handshake.jpeg */
+        background-size: cover;
+        /* it will cover the whole hero area with background image */
+        background-position: center;
+        /* it will center the background image */
+        background-repeat: no-repeat;
+        /* it will not repeat the background image */
+        height: 411px;
+        /* it will change the height of hero to 411px */
+        width: 100%;
+        /* it will change the width of hero to 100% */
+        background-position: 0px -92px;
+        /* it will change the position of background image to 0px from left and -92px from top */
+    
+    }
+    
+
+
+
+/* hero h2 styling */
+.hero h2 {
+    font-size: 34px;
+    /* it will change the font size of hero h2 to 34px */
+    color: #ffffff;
+    /* it will change the color of hero h2 to #333 */
+    margin-top: 100px;
+    /* it will change the position of hero h2 to 100px from top */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    /* it will change the font family of hero h2 to Franklin Gothic Medium, Arial Narrow, Arial, sans-serif */
+    width: fit-content;
+    /* it will adjust the width of hero h2 according to its content */
+    margin-left: 140px;
+    /* it will change the position of hero h2 to 140px from left */
+}
+
+/* hero h1 styling */
+.hero h1 {
+    font-size: 121px;
+    /* it will change the font size of hero h1 to 121px */
+    color: #333;
+    /* it will change the color of hero h1 to #333 */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    /* it will change the font family of hero h1 to Franklin Gothic Medium, Arial Narrow, Arial, sans-serif */
+    width: 0;
+    /* it will set the width of hero h1 to 0 */
+    overflow: hidden;
+    /* it will hide the overflow of hero h1 */
+    white-space: nowrap;
+    /* it will not wrap the text of hero h1 */
+    margin-left: 132px;
+    /* it will change the position of hero h1 to 132px from left */
+    animation: typinganimation 4s steps(30) forwards, blink 0.9s infinite;
+    /* it will add a typing animation to hero h1 */
+}
+
+@keyframes typinganimation {
+    from {
+        /* it will set the starting point of animation */
+        width: 0;
+    }
+
+    /* typinganimation will start from 0  to length of h1 */
+    to {
+        width: 19ch;
+    }
+
+    /* typinganimation will work accouding to length of h1 */
+}
+
+
+
+
+
+
+.booking-container {
+    background-color: #F9C809;
+    /* it will give booking container background of #F9C809  */
+    border-radius: 10px;
+    /* it will give booking container  */
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+    
+    width: auto;
+    /* it will adjust the width of booking container according to screen size */
+    max-width: 500px;
+    /* it will set the maximum width of booking container to 500px */
+    max-height: 90%;
+    /* it will set the maximum height of booking container to 90% */
+    padding: 30px;
+    /* it will add padding of 30px to booking container */
+    overflow-y: auto;
+    /* it will add vertical scroll to booking container */
+    position: relative;
+    /* it will help the element to change the position   */
+
+    left: 450px;
+    /* it will change the position of booking container to 450px from left */
+}
+
+#booking-form {
+    position: relative;
+    /* it will help the element to change the position   */
+    left: -9px;
+    /* it will change the position of booking form to -9px from left */
+}
+
+.booking-header {
+    text-align: center;
+    /* it will center the text of booking header */
+    margin-bottom: 30px;
+    /* it will add margin of 30px bottom to booking header */
+    height: 15%;
+    /* it will change the height of booking header to 15% */
+    display: flex;
+    /* it will display the booking header components horizontally */
+    flex-direction: column;
+    /* it will change the direction of booking header components to column */
+    justify-content: center;
+    /* it will center the booking header components vertically */
+}
+
+.booking-header h1 {
+    color: #333;
+    /* it will change the color of booking header h1 to #333 */
+    font-size: 28px;
+    /* it will change the font size of booking header h1 to 28px */
+    margin-bottom: 10px;
+    /* it will add margin of 10px bottom to booking header h1 */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* it will change the font family of booking header h1 to Franklin Gothic Medium, Arial Narrow, Arial, sans-serif */
+    font-weight: bold;
+    /* it will make the font bold */
+}
+
+.booking-header p {
+    color: #666;
+    /* it will change the color of booking header p to #666 */
+    font-size: 16px;
+    /* it will change the font size of booking header p to 16px */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* it will change the font family of booking header p to Franklin Gothic Medium, Arial Narrow, Arial, sans-serif */
+    margin-left: 63px;
+    /* it will change the position of booking header p to 63px from left */
+    font-weight: bold;
+    /* it will make the font bold */
+    margin-top: 14px;
+    /* it will add margin of 14px top to booking header p */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    /* it will add margin of 20px bottom to form group */
+}
+
+label {
+    display: block;
+    /* it will display the label as block */
+    margin-bottom: 8px;
+    /* it will add margin of 8px bottom to label */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* it will change the font family of label to Franklin Gothic Medium, Arial Narrow, Arial, sans-serif */
+    font-size: 16px;
+    /* it will change the font size of label to 16px */
+    font-weight: bold;
+    /* it will make the font bold */
+    color: #333;
+    /* it will change the color of label to #333 */
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    /* it will set the width of input, select and textarea to 100% */
+    padding: 12px;
+    /* it will add padding of 12px to input, select and textarea */
+    border: 1px solid #dddddd77;
+    /* it will add border of 1px solid #dddddd77 to input, select and textarea */
+    border-radius: 6px;
+    /* it will add border radius of 6px to input, select and textarea */
+    font-size: 16px;
+    /* it will change the font size of input, select and textarea to 16px */
+    transition: border-color 0.3s;
+    /* it will add a smooth transition effect to the input, select and textarea */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    /* it will remove the outline of input, select and textarea when user focus on it */
+    border-color: #4a90e2;
+    /* it will change the border color of input, select and textarea to #4a90e2 when user focus on it */
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+    /* it will add a box shadow of 0 0 0 2px rgba(74, 144, 226, 0.2) to input, select and textarea when user focus on it */
+}
+
+.form-row {
+    display: flex;
+    /* it will display the form row components horizontally */
+    gap: 15px;
+    /* it will add a gap of 15px between the form row components */
+}
+
+.form-row .form-group {
+    flex: 1;
+    /* it will make the form group take equal space in the form row */
+}
+
+textarea {
+    resize: vertical;
+    /* it will allow the user to resize the textarea vertically */
+    min-height: 100px;
+    /* it will set the minimum height of textarea to 100px */
+}
+
+button {
+    background-color: #333;
+    /* it will change the background color of button to #333 */
+    color: white;
+    /* it will change the color of button to white */
+    border: none;
+    /* it will remove the border of button */
+    border-radius: 6px;
+    /* it will add border radius of 6px to button */
+    padding: 14px 20px;
+    /* it will add padding of 14px top and bottom and 20px left and right to button */
+    font-size: 16px;
+    /* it will change the font size of button to 16px */
+    font-weight: 600;
+    /* it will make the font bold */
+    cursor: pointer;
+    /* it will change the cursor to pointer when user hover on it */
+    width: 100%;
+    /* it will set the width of button to 100% */
+    transition: background-color 0.3s;
+    /* it will add a smooth transition effect to the button */
+    margin-left: -8px;
+    /* it will change the position of button to -8px from left */
+}
+
+
+
+
+
+footer {
+    background-color: #262626;
+    /* it will change the background color of footer to #262626 */
+    height: 200px;
+    /* it will change the height of footer to 200px */
+    width: auto;
+    /* it will adjust the width of footer according to screen size */
+    /* display: flex; */
+    /* it will display the footer components horizontally */
+    justify-content: center;
+    /* it will center the footer components */
+    align-items: center;
+    /* it will align the footer components vertically */
+}
+
+footer {
+    background-color: #222;
+    /* it will change the background color of footer to #222 */
+    color: #fff;
+    /* it will change the color of footer to white */
+    padding: 20px 0;
+    /* it will add padding of 20px top and bottom to footer */
+    text-align: center;
+    /* it will center the text of footer */
+}
+
+footer ul {
+    list-style: none;
+    /* it will remove the bullet points from the list */
+    padding: 0;
+    /* it will remove the padding from the list */
+    margin: 0;
+    /* it will remove the margin from the list */
+    display: flex;
+    /* it will display the footer components horizontally */
+    justify-content: center;
+    /* it will center the footer components */
+    gap: 30px;
+    /* it will add a gap of 30px between the footer components */
+    MARGIN-BOTTOM: 20px;
+    /* it will change the position of footer to 20px from bottom */
+}
+
+footer ul li a {
+    text-decoration: none;
+    /* it will remove the underline from the links */
+    color: #fff;
+    /* it will change the color of links to white */
+    font-weight: bold;
+    /* it will make the font bold */
+    transition: color 0.3s ease;
+    /* it will add a smooth transition effect to the links */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    /* it will change the font family to Franklin Gothic Medium, Arial Narrow, Arial, sans-serif */
+    position: relative;
+    /* it will help the element to change the position   */
+    top: 80px;
+    /* it will change the position of footer to 80px from top */
+}
+
+footer ul li a:hover {
+    color: #F9C809;
+    /* it will change the color of links to #F9C809 when user hover on it */
+}
+
+.copyright {
+    margin-top: 95px;
+    /* it will change the position of copyright to 95px from top */
+    font-size: 14px;
+    /* it will change the font size of copyright to 14px */
+    color: #aaa;
+    /* it will change the color of copyright to #aaa */
+    text-align: center;
+    /* makes sure it's centered */
+}

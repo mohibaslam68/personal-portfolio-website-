@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+
+
+    .hero {
+        background-image: url(/Professional\ Handshake.jpeg);
+        /* it will change the background image of hero to Professional Handshake.jpeg */
+        background-size: cover;
+        /* it will cover the whole hero area with background image */
+        background-position: center;
+        /* it will center the background image */
+        background-repeat: no-repeat;
+        /* it will not repeat the background image */
+        height: 411px;
+        /* it will change the height of hero to 411px */
+        width: 100%;
+        /* it will change the width of hero to 100% */
+
+
+    }
+
+    .booking-container {
+        top: 0;
+        left: 0;
+        margin: 20px auto;
+        width: 88%;
+        max-width: 95%;
+        height: auto;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #booking-form {
+        left: 0;
+    }
+
+    .booking-header p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    button[type="submit"] {
+        margin-left: 0;
+        position: relative;
+        left: 10px;
+        top: 11px;
+    }
+}

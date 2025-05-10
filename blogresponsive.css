@@ -1,0 +1,37 @@
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        /* it will create a grid with auto-fill and minmax properties */
+        gap: 20px;
+        /* it will add a gap of 20px between the container components */
+        padding: 10px;
+        /* it will add padding to the container */
+    }
+
+    .card-content {
+        padding: 20px;
+        /* it will add padding to the card-content */
+    }
+
+    .card-title {
+        font-size: 18px;
+        /* it will change the font size of card-title to 18px */
+    }
+    .blog-card {
+        position: relative;
+        /* it will set the position of blog-card to relative */
+        left: 30px;
+        /* it will set the left position of blog-card to 30px */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-image {
+        height: 180px;
+    }
+}

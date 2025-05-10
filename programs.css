@@ -1,0 +1,370 @@
+/* it will ensure uniform styling across browsers, 
+it  will resets the margin and padding of all elements to zero.  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header styling */
+/* from line 9 to 86 header and its components are styled */
+header {
+    background-color: #262626;
+    /* it will change the background color to #262626;*/
+    width: auto;
+    /* width auto property will adjust header width accounding to screen size */
+    height: 50px;
+    /* this property will give the hight to header*/
+    display: flex;
+    /* it will disply header components horizontally */
+}
+
+/* contact-info styling */
+.contact-info {
+    color: rgba(255, 255, 255, 0.602);
+    /* it will change the background color to 255, 255, 255, 0.602;*/
+    position: relative;
+    /* it will help the element to change the position   */
+    left: 100px;
+    /* it will change the position of contact-info to 100px from left */
+    top: 15px;
+    /* it will change the position of contact-info to 15px from top */
+    font-weight: bold;
+    /* it will make the font bold */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    /* it will change the font family to Franklin Gothic Medium, Arial Narrow, Arial, sans-serif */
+    font-size: 18px;
+    /* it will change the font size to 18px */
+    display: flex;
+    /* it will display the contact-info components horizontally */
+    gap: 5px;
+    /* it will add a gap of 5px between the components */
+    width: fit-content;
+    /* it will adjust the width of contact-info according to its content */
+}
+
+.contact-info:hover {
+    color: white;
+    /* it will change the color of contact-info to white when user hover on it */
+}
+
+/* ontact-info img styling */
+.contact-info img {
+    width: 37px;
+    /* it will change the width of contact-info img to 37px */
+    height: 27px;
+    /* it will change the height of contact-info img to 27px */
+    object-fit: contain;
+    /* it will make the image fit in the container */
+    transition: filter 0.3s ease;
+    /* it will add a smooth transition effect to the image */
+    margin-top: -1px;
+    /* it will change the position of contact-info img to -1px from top */
+}
+
+.contact-info img:hover {
+    filter: brightness(0) invert(1);
+    /* it will change the brightness of contact-info img to 0 and invert it when user hover on it */
+}
+
+.contact-info img,
+.contact-info span {
+    transition: all 0.3s ease;
+    /* it will add a smooth transition effect to the contact-info img and span */
+}
+
+/* Target the first pair on hover */
+.contact-info:hover img:first-of-type,
+.contact-info:hover span:first-of-type {
+    color: white;
+    /* it will change the color of contact-info img and span to white when user hover on it */
+    filter: brightness(0) invert(1);
+    /* it will change the brightness of contact-info img to 0 and invert it when user hover on it */
+}
+
+/* Target the second pair on hover — if you hover the image or span directly */
+.contact-info img:nth-of-type(2):hover,
+.contact-info span:nth-of-type(2):hover {
+    color: white;
+    /* it will change the color of contact-info img and span to white when user hover on it */
+    filter: brightness(0) invert(1);
+    /* it will change the brightness of contact-info img to 0 and invert it when user hover on it */
+}
+
+/* social-icons styling */
+.social-icons {
+    width: 272px;
+    /* it will change the width of social-icons to 272px */
+    height: 50px;
+    /* it will change the height of social-icons to 50px */
+    display: flex;
+    /* it will display the social-icons components horizontally */
+    justify-content: center;
+    /* it will center the social-icons components */
+    align-items: center;
+    /* it will align the social-icons components vertically */
+    position: relative;
+    /* it will help the element to change the position   */
+    left: 815px;
+    /* it will change the position of social-icons to 815px from left */
+    gap: 15px;
+    /* it will add a gap of 15px between the social-icons components */
+}
+
+/* social-icons img styling */
+.social-icons img {
+    width: 23px;
+    /* it will change the width of social-icons img to 23px */
+    height: 25px;
+    /* it will change the height of social-icons img to 25px */
+    transition: filter 0.3s ease;
+    /* it will add a smooth transition effect to the social-icons img */
+}
+
+.social-icons img:hover {
+    filter: brightness(0) invert(1);
+    /* it will change the brightness of social-icons img to 0 and invert it when user hover on it */
+}
+
+/* navnar styling  */
+/* fom line 89  to 118 Navbar and its components are  styed */
+/* Basic navbar styling */
+.navbar {
+    background-color: #DCDCDC;
+    /* it will change the background color of navbar to #DCDCDC */
+    width: auto;
+    /* it will adjust the width of navbar according to screen size */
+    height: 50px;
+    /* it will change the height of navbar to 50px */
+    display: flex;
+    /* it will display the navbar components horizontally */
+    justify-content: space-between;
+    /* it will add space between the navbar components */
+    align-items: center;
+    /* it will align the navbar components vertically */
+    padding: 0 10px;
+    /* it will add padding to the navbar */
+}
+
+
+.navbar ul {
+    list-style: none;
+    /* it will remove the bullet points from the list */
+    padding: 0;
+    /* it will remove the padding from the list */
+    margin: 0;
+    /* it will remove the margin from the list */
+    display: flex;
+    /* it will display the navbar components horizontally */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    /* it will change the font family of navbar to Franklin Gothic Medium, Arial Narrow, Arial, sans-serif */
+    font-weight: bold;
+    /* it will make the font bold */
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    /* it will remove the underline from the links */
+    color: #333;
+    /* it will change the color of links to #333 */
+    padding: 10px 15px;
+    /* it will add padding to the links */
+    display: inline-block;
+    /* it will display the links as inline-block */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* it will add a smooth transition effect to the links */
+}
+
+.navbar li a:hover {
+    background-color: #333;
+    /* it will change the background color of links to #333 when user hover on it */
+    color: #fff;
+    /* it will change the color of links to #fff when user hover on it */
+    border-radius: 5px;
+    /* it will add a border radius of 5px to the links */
+}
+
+
+.hamburger {
+    display: none;
+    /* it will hide the hamburger icon */
+    font-size: 30px;
+    /* it will change the font size of hamburger icon to 30px */
+    cursor: pointer;
+    /* it will change the cursor to pointer when user hover on it */
+}
+
+
+
+
+
+
+.hero {
+    background-image: url(/Determined\ Man\ Doing\ Push-Ups.jpeg);
+    /* it will add the image to the background of hero */
+    background-size: cover;
+    /* it will cover the entire background of hero */
+    background-position: center;
+    /* it will center the background of hero */
+    background-repeat: no-repeat;
+    /* it will not repeat the background of hero */
+    height: 380px;
+    /* it will change the height of hero to 600px */
+    width: auto;
+    /* it will adjust the width of hero according to screen size */
+}
+
+
+
+
+
+.hero h2 {
+    font-size: 34px;
+    /* it will change the font size of hero h2 to 34px */
+    color: #ffffff;
+    /* it will change the color of hero h2 to #333 */
+    margin-top: 100px;
+    /* it will change the position of hero h2 to 100px from top */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    /* it will change the font family of hero h2 to Franklin Gothic Medium, Arial Narrow, Arial, sans-serif */
+    width: fit-content;
+    /* it will adjust the width of hero h2 according to its content */
+    margin-left: 140px;
+    /* it will change the position of hero h2 to 140px from left */
+}
+.Workouts {
+    padding: 2rem;
+    /* it will add padding to the Workouts */
+    font-family: Arial, sans-serif;
+    /* it will change the font family of Workouts to Arial, sans-serif */
+    text-align: center;
+    /* it will center the text of Workouts */
+    background-color: #333;
+    /* it will change the background color of Workouts to #333 */
+  }
+  
+  .Workouts-container {
+    display: grid;
+    /* it will display the Workouts components in grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* it will create a grid with 250px minimum width and 1fr maximum width */
+    gap: 2rem;
+    /* it will add a gap of 2rem between the Workouts components */
+    margin-top: 2rem;
+    /* it will add a margin of 2rem to the top of Workouts components */
+  }
+  
+  .Workouts-card {
+    background-color: #fff;
+    /* it will change the background color of Workouts-card to #fff */
+    border-radius: 12px;
+    /* it will add a border radius of 12px to the Workouts-card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* it will add a box shadow to the Workouts-card */
+    overflow: hidden;
+    /* it will hide the overflow of Workouts-card */
+    transition: transform 0.3s ease;
+    /* it will add a smooth transition effect to the Workouts-card */
+    cursor: pointer;
+    /* it will change the cursor to pointer when user hover on it */
+    position: relative;
+    /* it will help the element to change the position   */
+    box-shadow: 0 4px 8px #ffcc00;
+    /* it will add a box shadow to the Workouts-card */
+
+  }
+  
+  .Workouts-card img {
+    width: 100%;
+    /* it will change the width of Workouts-card img to 100% */
+    height: 180px;
+    /* it will change the height of Workouts-card img to 180px */
+    object-fit: cover;
+    /* it will make the image fit in the container */
+  }
+  
+  .Workouts-card h3 {
+    margin: 1rem 0 0.5rem;
+    /* it will change the margin of Workouts-card h3 to 1rem 0 0.5rem */
+  }
+  
+  .Workouts-card p {
+    padding: 0 ;
+    /* it will remove the padding from Workouts-card p */
+    opacity: 0;
+    /* it will change the opacity of Workouts-card p to 0 */
+    max-height: 0;
+    /* it will change the max height of Workouts-card p to 0 */
+    overflow: hidden;
+    /* it will hide the overflow of Workouts-card p */
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    /* it will add a smooth transition effect to the Workouts-card p */
+  }
+  
+  .Workouts-card:hover {
+    transform: translateY(-5px);
+    /* it will change the position of Workouts-card to -5px from top when user hover on it */
+  }
+  
+  .Workouts-card:hover p {
+    opacity: 1;
+    /* it will change the opacity of Workouts-card p to 1 when user hover on it */
+    max-height: 200px; /* Enough to show full text */
+  }
+  
+  footer {
+    background-color: #222;
+    /* it will change the background color of footer to #222 */
+    color: #fff;
+    /* it will change the color of footer to #fff */
+    padding: 20px 0;
+    /* it will add padding to the footer */
+    text-align: center;
+    /* it will center the text of footer */
+}
+
+footer ul {
+    list-style: none;
+    /* it will remove the bullet points from the list */
+    padding: 0;
+    /* it will remove the padding from the list */
+    margin: 0;
+    /* it will remove the margin from the list */
+    display: flex;
+    /* it will display the footer components horizontally */
+    justify-content: center;
+    /* it will center the footer components */
+    gap: 30px;
+    /* it will add a gap of 30px between the footer components */
+    MARGIN-BOTTOM: 20px;
+    /* it will add a margin of 20px to the bottom of the list */
+}
+
+footer ul li a {
+    text-decoration: none;
+    /* it will remove the underline from the links */
+    color: #fff;
+    /* it will change the color of links to #fff */
+    font-weight: bold;
+    /* it will make the font bold */
+    transition: color 0.3s ease;
+    /* it will add a smooth transition effect to the links */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    /* it will change the font family of links to Franklin Gothic Medium, Arial Narrow, Arial, sans-serif */
+    position: relative;
+    /* it will help the element to change the position   */
+    top: 80px;
+    /* it will change the position of links to 80px from top */
+}
+
+footer ul li a:hover {
+    color: #F9C809;
+}
+
+.copyright {
+    margin-top: 95px;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+    /* makes sure it's centered */
+}

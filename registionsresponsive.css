@@ -1,0 +1,28 @@
+@media (max-width: 500px) {
+    .becomeamember-form {
+        /* padding: 20px; */
+        position: relative;
+        left: 20px;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 0.95em;
+        /* padding: 10px; */
+        position: relative;
+        top: 9px;
+    }
+
+    .small-div {
+        position: relative;
+        top: 22px;
+        left: -10px;
+    }
+
+    button[type="submit"] {
+        position: relative;
+        left: 10px;
+        top: 11px;
+    }
+}
